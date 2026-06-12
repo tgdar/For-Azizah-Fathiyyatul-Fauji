@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Tya ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="music" loop>
+    <source src="assets/lagu.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="hearts" id="hearts"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <main>
+    <section class="page active intro">
+      <div class="glass">
+        <p class="small">13 • 5 Bulan Bersama</p>
+        <h1>Hai, Tya ❤️</h1>
+        <p class="typing" id="typingText"></p>
+        <button onclick="startLove()">Mulai Cerita Kita</button>
+      </div>
+    </section>
+
+    <section class="page story">
+      <div class="glass">
+        <h1>5 Bulan Bersamamu</h1>
+        <p>
+          Tidak terasa, tepat di tanggal 13 ini hubungan kita sudah berjalan 5 bulan.
+          Lima bulan yang penuh cerita, rindu, tawa, dan rasa sayang yang semakin tumbuh setiap hari.
+        </p>
+        <p>
+          Terima kasih sudah hadir, Tya. Kamu adalah salah satu alasan kenapa hari-hariku terasa lebih indah.
+        </p>
+        <div class="nav"><button onclick="prevPage()">Back</button><button onclick="nextPage()">Next</button></div>
+      </div>
+    </section>
+
+    <section class="page gallery">
+      <div class="gallery-bg">
+        <img src="assets/foto1.jpg" onerror="this.src='assets/placeholder.svg'" />
+        <img src="assets/foto2.jpg" onerror="this.src='assets/placeholder.svg'" />
+        <img src="assets/foto3.jpg" onerror="this.src='assets/placeholder.svg'" />
+        <img src="assets/foto4.jpg" onerror="this.src='assets/placeholder.svg'" />
+        <img src="assets/foto5.jpg" onerror="this.src='assets/placeholder.svg'" />
+        <img src="assets/foto6.jpg" onerror="this.src='assets/placeholder.svg'" />
+      </div>
+      <div class="glass">
+        <h1>Galeri Kenangan Kita 📸</h1>
+        <p>
+          Dari banyaknya hari yang aku lewati, kamu adalah bagian terindah yang selalu ingin aku ulang lagi dan lagi.
+        </p>
+        <p>Tya, kamu bukan cuma seseorang yang aku sayang, tapi juga rumah untuk setiap rinduku.</p>
+        <div class="nav"><button onclick="prevPage()">Back</button><button onclick="nextPage()">Next</button></div>
+      </div>
+    </section>
+
+    <section class="page letter">
+      <div class="glass">
+        <h1>Surat Untuk Tya 💌</h1>
+        <div class="envelope" onclick="openLetter()">
+          <div class="flap"></div>
+          <div class="paper" id="paper">
+            <p>
+              Tya, terima kasih sudah bertahan sejauh ini. Aku tahu hubungan ini tidak selalu mudah,
+              tapi aku ingin terus memilih kamu, menjaga kamu, dan berjuang bersama kamu.
+            </p>
+          </div>
+        </div>
+        <p class="hint">Klik suratnya ya sayang</p>
+        <div class="nav"><button onclick="prevPage()">Back</button><button onclick="nextPage()">Next</button></div>
+      </div>
+    </section>
+
+    <section class="page final">
+      <canvas id="fireworks"></canvas>
+      <div class="glass">
+        <h1>Selamat 5 Bulan, Tya ❤️</h1>
+        <p>
+          Semoga kita terus saling menjaga, saling menguatkan, dan tetap bersama dalam banyak cerita indah berikutnya.
+        </p>
+        <h2>Aku sayang kamu, Tya.</h2>
+        <div class="nav"><button onclick="prevPage()">Back</button><button onclick="goFirst()">Ulang Lagi</button></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
