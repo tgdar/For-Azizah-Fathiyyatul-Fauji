@@ -7,13 +7,12 @@
   overflow:hidden;}.flap{position:absolute;left:0;right:0;top:0;border-left:180px solid transparent;border-right:180px solid transparent;border-top:115px solid #ff5ca7;transform-origin:top;transition:.7s}.paper{position:absolute;
   left:18px;
   right:18px;
-  top:18px;
-  bottom:18px;
+  top:20px;
+  bottom:20px;
   background:white;
   color:#c21868;
-  padding:18px;
+  padding:15px;
   border-radius:12px;
-  font-weight:600;
   overflow-y:auto;
   line-height:1.7;
-  font-size:15px;}.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .paper{bottom:24px}.final canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}@media(max-width:600px){.gallery-bg{grid-template-columns:repeat(2,1fr)}.glass{padding:22px}.envelope{height:215px}.flap{border-left:39vw solid transparent;border-right:39vw solid transparent}}
+  font-size:15px;}.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .paper{top:20px;bottom:20px;}.final canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}@media(max-width:600px){.gallery-bg{grid-template-columns:repeat(2,1fr)}.glass{padding:22px}.envelope{height:350px}.flap{border-left:39vw solid transparent;border-right:39vw solid transparent}}
