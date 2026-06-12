@@ -276,3 +276,10 @@ button:hover{
     border-right:39vw solid transparent;
   }
 }
+.paper{
+  pointer-events:none;
+}
+
+.envelope.open .paper{
+  pointer-events:auto;
+}
